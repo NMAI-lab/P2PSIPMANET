@@ -1,0 +1,1913 @@
+version 2
+run General-0-20190823-10:11:01-3710
+attr configname General
+attr datetime 20190823-10:11:01
+attr experiment General
+attr inifile HierarchicalNetwork.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network OLSR
+attr processid 3710
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar OLSR.gw[0].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar OLSR.gw[0].networkLayer.arp 	completedARPResolution:count 	8
+attr title  "ARP completed resolutions, count"
+scalar OLSR.gw[0].networkLayer.arp 	initiatedARPResolution:count 	4
+attr title  "ARP initiated resolutions, count"
+scalar OLSR.gw[0].networkLayer.arp 	sentReply:count 	4
+attr title  "ARP replies sent, count"
+scalar OLSR.gw[0].networkLayer.arp 	sentReq:count 	4
+attr title  "ARP request sent, count"
+scalar OLSR.gw[0].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar OLSR.gw[0].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar OLSR.gw[0].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[0].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[0].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[0].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[0].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.gw[0].wlan[0].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.gw[0].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.gw[0].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[0].mac 	"number of received packets" 	4
+scalar OLSR.gw[0].wlan[0].mac 	"number of collisions" 	0
+scalar OLSR.gw[0].wlan[0].mac 	"number of internal collisions" 	0
+scalar OLSR.gw[0].wlan[0].mac 	"number of retry for AC 0" 	0
+scalar OLSR.gw[0].wlan[0].mac 	"sent and received bits" 	3906064
+scalar OLSR.gw[0].wlan[0].mac 	"sent packet within AC 0" 	400
+scalar OLSR.gw[0].wlan[0].mac 	"sent in TXOP " 	0
+scalar OLSR.gw[0].wlan[0].mac 	"sentWithoutRetry AC 0" 	400
+scalar OLSR.gw[0].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.gw[0].wlan[0].mac 	"numDropped AC 0" 	0
+scalar OLSR.gw[0].wlan[0].mac 	rcvdPkFromHL:count 	913
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[0].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	488258
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[0].mac 	passedUpPk:count 	721
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[0].wlan[0].mac 	passedUpPk:sum(packetBytes) 	74386
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[0].mac 	rcvdPkFromLL:count 	1525
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.gw[0].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	85866
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[0].mac 	sentDownPk:count 	917
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.gw[0].wlan[0].mac 	sentDownPk:sum(packetBytes) 	488314
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.gw[0].wlan[0].radio 	lossRate:max 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.gw[0].wlan[0].radio 	lossRate:timeavg 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.gw[0].wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar OLSR.gw[0].wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.gw[0].wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.gw[0].wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.gw[0].wlan[0].radio 	radioState:count 	4885
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.gw[0].wlan[1].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.gw[0].wlan[1].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.gw[0].wlan[1].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.gw[0].wlan[1].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[1].mac 	"number of received packets" 	400
+scalar OLSR.gw[0].wlan[1].mac 	"number of collisions" 	0
+scalar OLSR.gw[0].wlan[1].mac 	"number of internal collisions" 	0
+scalar OLSR.gw[0].wlan[1].mac 	"number of retry for AC 0" 	0
+scalar OLSR.gw[0].wlan[1].mac 	"sent and received bits" 	408112
+scalar OLSR.gw[0].wlan[1].mac 	"sent packet within AC 0" 	4
+scalar OLSR.gw[0].wlan[1].mac 	"sent in TXOP " 	0
+scalar OLSR.gw[0].wlan[1].mac 	"sentWithoutRetry AC 0" 	4
+scalar OLSR.gw[0].wlan[1].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.gw[0].wlan[1].mac 	"numDropped AC 0" 	0
+scalar OLSR.gw[0].wlan[1].mac 	rcvdPkFromHL:count 	511
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[0].wlan[1].mac 	rcvdPkFromHL:sum(packetBytes) 	51014
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[1].mac 	passedUpPk:count 	1198
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[0].wlan[1].mac 	passedUpPk:sum(packetBytes) 	521548
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[1].mac 	rcvdPkFromLL:count 	2005
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.gw[0].wlan[1].mac 	rcvdPkFromLL:sum(packetBytes) 	533014
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[1].mac 	sentDownPk:count 	911
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.gw[0].wlan[1].mac 	sentDownPk:sum(packetBytes) 	56614
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.gw[0].wlan[1].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.gw[0].wlan[1].radio 	lossRate:max 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.gw[0].wlan[1].radio 	lossRate:timeavg 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.gw[0].wlan[1].radio 	channelNo:histogram
+field count 1
+field mean 2
+field stddev -nan
+field sum 2
+field sqrsum 4
+field min 2
+field max 2
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	1	0
+bin	2	1
+bin	3	0
+scalar OLSR.gw[0].wlan[1].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.gw[0].wlan[1].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.gw[0].wlan[1].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.gw[0].wlan[1].radio 	radioState:count 	5833
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.gw[0].udpApp[0] 	"packets sent" 	0
+scalar OLSR.gw[0].udpApp[0] 	"packets received" 	0
+scalar OLSR.gw[0].udpApp[0] 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.gw[0].udpApp[0] 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic OLSR.gw[0].udpApp[0] 	rcvdPkLifetime:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar OLSR.gw[0].udpApp[0] 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.gw[0].udpApp[0] 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.gw[0].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar OLSR.gw[0].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar OLSR.gw[0].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar OLSR.gw[0].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.gw[0].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar OLSR.gw[0].udp 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.gw[0].udp 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.gw[0].manetrouting 	OLSR_HNA_Messages_(Forwarded) 	0
+scalar OLSR.gw[0].manetrouting 	OLSR_TC_Messages_(Forwarded) 	124
+scalar OLSR.gw[0].manetrouting 	OLSR_Total_HELLO 	341
+scalar OLSR.gw[0].manetrouting 	OLSR_Total_HNA_(originated) 	126
+scalar OLSR.gw[0].manetrouting 	OLSR_Total_TC 	0
+scalar OLSR.gw[0].manetrouting 	OLSR_Total_Messages_Sent 	591
+scalar OLSR.gw[0].backbonemanetrouting 	OLSR_HNA_Messages_(Forwarded) 	123
+scalar OLSR.gw[0].backbonemanetrouting 	OLSR_TC_Messages_(Forwarded) 	125
+scalar OLSR.gw[0].backbonemanetrouting 	OLSR_Total_HELLO 	342
+scalar OLSR.gw[0].backbonemanetrouting 	OLSR_Total_HNA_(originated) 	125
+scalar OLSR.gw[0].backbonemanetrouting 	OLSR_Total_TC 	0
+scalar OLSR.gw[0].backbonemanetrouting 	OLSR_Total_Messages_Sent 	715
+scalar OLSR.gw[1].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar OLSR.gw[1].networkLayer.arp 	completedARPResolution:count 	7
+attr title  "ARP completed resolutions, count"
+scalar OLSR.gw[1].networkLayer.arp 	initiatedARPResolution:count 	4
+attr title  "ARP initiated resolutions, count"
+scalar OLSR.gw[1].networkLayer.arp 	sentReply:count 	3
+attr title  "ARP replies sent, count"
+scalar OLSR.gw[1].networkLayer.arp 	sentReq:count 	4
+attr title  "ARP request sent, count"
+scalar OLSR.gw[1].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar OLSR.gw[1].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar OLSR.gw[1].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[1].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[1].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[1].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[0].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.gw[1].wlan[0].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.gw[1].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.gw[1].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[0].mac 	"number of received packets" 	0
+scalar OLSR.gw[1].wlan[0].mac 	"number of collisions" 	0
+scalar OLSR.gw[1].wlan[0].mac 	"number of internal collisions" 	0
+scalar OLSR.gw[1].wlan[0].mac 	"number of retry for AC 0" 	0
+scalar OLSR.gw[1].wlan[0].mac 	"sent and received bits" 	383200
+scalar OLSR.gw[1].wlan[0].mac 	"sent packet within AC 0" 	0
+scalar OLSR.gw[1].wlan[0].mac 	"sent in TXOP " 	0
+scalar OLSR.gw[1].wlan[0].mac 	"sentWithoutRetry AC 0" 	0
+scalar OLSR.gw[1].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.gw[1].wlan[0].mac 	"numDropped AC 0" 	0
+scalar OLSR.gw[1].wlan[0].mac 	rcvdPkFromHL:count 	512
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[1].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	47900
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[0].mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[1].wlan[0].mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[0].mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.gw[1].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[0].mac 	sentDownPk:count 	512
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.gw[1].wlan[0].mac 	sentDownPk:sum(packetBytes) 	47900
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[0].radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.gw[1].wlan[0].radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.gw[1].wlan[0].radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.gw[1].wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 4
+field stddev -nan
+field sum 4
+field sqrsum 16
+field min 4
+field max 4
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	3	0
+bin	4	1
+bin	5	0
+scalar OLSR.gw[1].wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.gw[1].wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.gw[1].wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.gw[1].wlan[0].radio 	radioState:count 	1025
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.gw[1].wlan[1].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.gw[1].wlan[1].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.gw[1].wlan[1].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.gw[1].wlan[1].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[1].mac 	"number of received packets" 	804
+scalar OLSR.gw[1].wlan[1].mac 	"number of collisions" 	4
+scalar OLSR.gw[1].wlan[1].mac 	"number of internal collisions" 	0
+scalar OLSR.gw[1].wlan[1].mac 	"number of retry for AC 0" 	0
+scalar OLSR.gw[1].wlan[1].mac 	"sent and received bits" 	4174064
+scalar OLSR.gw[1].wlan[1].mac 	"sent packet within AC 0" 	403
+scalar OLSR.gw[1].wlan[1].mac 	"sent in TXOP " 	0
+scalar OLSR.gw[1].wlan[1].mac 	"sentWithoutRetry AC 0" 	403
+scalar OLSR.gw[1].wlan[1].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.gw[1].wlan[1].mac 	"numDropped AC 0" 	0
+scalar OLSR.gw[1].wlan[1].mac 	rcvdPkFromHL:count 	1201
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[1].wlan[1].mac 	rcvdPkFromHL:sum(packetBytes) 	521758
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[1].mac 	passedUpPk:count 	1818
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[1].wlan[1].mac 	passedUpPk:sum(packetBytes) 	977312
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[1].mac 	rcvdPkFromLL:count 	2225
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.gw[1].wlan[1].mac 	rcvdPkFromLL:sum(packetBytes) 	986334
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[1].mac 	sentDownPk:count 	2005
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.gw[1].wlan[1].mac 	sentDownPk:sum(packetBytes) 	533014
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.gw[1].wlan[1].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.gw[1].wlan[1].radio 	lossRate:max 	0.02
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.gw[1].wlan[1].radio 	lossRate:timeavg 	0.0014752637728383
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.gw[1].wlan[1].radio 	channelNo:histogram
+field count 1
+field mean 2
+field stddev -nan
+field sum 2
+field sqrsum 4
+field min 2
+field max 2
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	1	0
+bin	2	1
+bin	3	0
+scalar OLSR.gw[1].wlan[1].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.gw[1].wlan[1].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.gw[1].wlan[1].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.gw[1].wlan[1].radio 	radioState:count 	8461
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.gw[1].udpApp[0] 	"packets sent" 	0
+scalar OLSR.gw[1].udpApp[0] 	"packets received" 	400
+scalar OLSR.gw[1].udpApp[0] 	rcvdPk:count 	400
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.gw[1].udpApp[0] 	rcvdPk:sum(packetBytes) 	409600
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic OLSR.gw[1].udpApp[0] 	rcvdPkLifetime:stats
+field count 400
+field mean 0.014352621941658
+field stddev 0.00093164909755192
+field sum 5.741048776663
+field sqrsum 0.082745422686407
+field min 0.014168500349
+field max 0.020268500349
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar OLSR.gw[1].udpApp[0] 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.gw[1].udpApp[0] 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.gw[1].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar OLSR.gw[1].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar OLSR.gw[1].udp 	passedUpPk:count 	400
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar OLSR.gw[1].udp 	rcvdPk:count 	400
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.gw[1].udp 	rcvdPk:sum(packetBytes) 	412800
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar OLSR.gw[1].udp 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.gw[1].udp 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.gw[1].manetrouting 	OLSR_HNA_Messages_(Forwarded) 	0
+scalar OLSR.gw[1].manetrouting 	OLSR_TC_Messages_(Forwarded) 	0
+scalar OLSR.gw[1].manetrouting 	OLSR_Total_HELLO 	341
+scalar OLSR.gw[1].manetrouting 	OLSR_Total_HNA_(originated) 	127
+scalar OLSR.gw[1].manetrouting 	OLSR_Total_TC 	0
+scalar OLSR.gw[1].manetrouting 	OLSR_Total_Messages_Sent 	468
+scalar OLSR.gw[1].backbonemanetrouting 	OLSR_HNA_Messages_(Forwarded) 	248
+scalar OLSR.gw[1].backbonemanetrouting 	OLSR_TC_Messages_(Forwarded) 	0
+scalar OLSR.gw[1].backbonemanetrouting 	OLSR_Total_HELLO 	340
+scalar OLSR.gw[1].backbonemanetrouting 	OLSR_Total_HNA_(originated) 	0
+scalar OLSR.gw[1].backbonemanetrouting 	OLSR_Total_TC 	125
+scalar OLSR.gw[1].backbonemanetrouting 	OLSR_Total_Messages_Sent 	713
+scalar OLSR.gw[2].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar OLSR.gw[2].networkLayer.arp 	completedARPResolution:count 	11
+attr title  "ARP completed resolutions, count"
+scalar OLSR.gw[2].networkLayer.arp 	initiatedARPResolution:count 	3
+attr title  "ARP initiated resolutions, count"
+scalar OLSR.gw[2].networkLayer.arp 	sentReply:count 	4
+attr title  "ARP replies sent, count"
+scalar OLSR.gw[2].networkLayer.arp 	sentReq:count 	3
+attr title  "ARP request sent, count"
+scalar OLSR.gw[2].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar OLSR.gw[2].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar OLSR.gw[2].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[2].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[2].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[2].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[0].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.gw[2].wlan[0].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.gw[2].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.gw[2].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[0].mac 	"number of received packets" 	800
+scalar OLSR.gw[2].wlan[0].mac 	"number of collisions" 	6
+scalar OLSR.gw[2].wlan[0].mac 	"number of internal collisions" 	0
+scalar OLSR.gw[2].wlan[0].mac 	"number of retry for AC 0" 	0
+scalar OLSR.gw[2].wlan[0].mac 	"sent and received bits" 	410784
+scalar OLSR.gw[2].wlan[0].mac 	"sent packet within AC 0" 	4
+scalar OLSR.gw[2].wlan[0].mac 	"sent in TXOP " 	0
+scalar OLSR.gw[2].wlan[0].mac 	"sentWithoutRetry AC 0" 	4
+scalar OLSR.gw[2].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.gw[2].wlan[0].mac 	"numDropped AC 0" 	0
+scalar OLSR.gw[2].wlan[0].mac 	rcvdPkFromHL:count 	522
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[2].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	51348
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[0].mac 	passedUpPk:count 	1646
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[2].wlan[0].mac 	passedUpPk:sum(packetBytes) 	965020
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[0].mac 	rcvdPkFromLL:count 	2058
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.gw[2].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	977380
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[0].mac 	sentDownPk:count 	1322
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.gw[2].wlan[0].mac 	sentDownPk:sum(packetBytes) 	62548
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.gw[2].wlan[0].radio 	lossRate:max 	0.02
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.gw[2].wlan[0].radio 	lossRate:timeavg 	0.00240463517803
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.gw[2].wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 1
+field stddev -nan
+field sum 1
+field sqrsum 1
+field min 1
+field max 1
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	0	0
+bin	1	1
+bin	2	0
+scalar OLSR.gw[2].wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.gw[2].wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.gw[2].wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.gw[2].wlan[0].radio 	radioState:count 	6761
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.gw[2].wlan[1].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.gw[2].wlan[1].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.gw[2].wlan[1].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.gw[2].wlan[1].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[1].mac 	"number of received packets" 	3
+scalar OLSR.gw[2].wlan[1].mac 	"number of collisions" 	0
+scalar OLSR.gw[2].wlan[1].mac 	"number of internal collisions" 	0
+scalar OLSR.gw[2].wlan[1].mac 	"number of retry for AC 0" 	3
+scalar OLSR.gw[2].wlan[1].mac 	"sent and received bits" 	7414464
+scalar OLSR.gw[2].wlan[1].mac 	"sent packet within AC 0" 	800
+scalar OLSR.gw[2].wlan[1].mac 	"sent in TXOP " 	0
+scalar OLSR.gw[2].wlan[1].mac 	"sentWithoutRetry AC 0" 	797
+scalar OLSR.gw[2].wlan[1].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.gw[2].wlan[1].mac 	"numDropped AC 0" 	0
+scalar OLSR.gw[2].wlan[1].mac 	rcvdPkFromHL:count 	1312
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.gw[2].wlan[1].mac 	rcvdPkFromHL:sum(packetBytes) 	926808
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[1].mac 	passedUpPk:count 	801
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.gw[2].wlan[1].mac 	passedUpPk:sum(packetBytes) 	84158
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[1].mac 	rcvdPkFromLL:count 	2005
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.gw[2].wlan[1].mac 	rcvdPkFromLL:sum(packetBytes) 	533014
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[1].mac 	sentDownPk:count 	1318
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.gw[2].wlan[1].mac 	sentDownPk:sum(packetBytes) 	930132
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.gw[2].wlan[1].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.gw[2].wlan[1].radio 	lossRate:max 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.gw[2].wlan[1].radio 	lossRate:timeavg 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.gw[2].wlan[1].radio 	channelNo:histogram
+field count 1
+field mean 2
+field stddev -nan
+field sum 2
+field sqrsum 4
+field min 2
+field max 2
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	1	0
+bin	2	1
+bin	3	0
+scalar OLSR.gw[2].wlan[1].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.gw[2].wlan[1].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.gw[2].wlan[1].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.gw[2].wlan[1].radio 	radioState:count 	6647
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.gw[2].udpApp[0] 	"packets sent" 	0
+scalar OLSR.gw[2].udpApp[0] 	"packets received" 	0
+scalar OLSR.gw[2].udpApp[0] 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.gw[2].udpApp[0] 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic OLSR.gw[2].udpApp[0] 	rcvdPkLifetime:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar OLSR.gw[2].udpApp[0] 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.gw[2].udpApp[0] 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.gw[2].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar OLSR.gw[2].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar OLSR.gw[2].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar OLSR.gw[2].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.gw[2].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar OLSR.gw[2].udp 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.gw[2].udp 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.gw[2].manetrouting 	OLSR_HNA_Messages_(Forwarded) 	0
+scalar OLSR.gw[2].manetrouting 	OLSR_TC_Messages_(Forwarded) 	249
+scalar OLSR.gw[2].manetrouting 	OLSR_Total_HELLO 	342
+scalar OLSR.gw[2].manetrouting 	OLSR_Total_HNA_(originated) 	126
+scalar OLSR.gw[2].manetrouting 	OLSR_Total_TC 	0
+scalar OLSR.gw[2].manetrouting 	OLSR_Total_Messages_Sent 	717
+scalar OLSR.gw[2].backbonemanetrouting 	OLSR_HNA_Messages_(Forwarded) 	124
+scalar OLSR.gw[2].backbonemanetrouting 	OLSR_TC_Messages_(Forwarded) 	125
+scalar OLSR.gw[2].backbonemanetrouting 	OLSR_Total_HELLO 	343
+scalar OLSR.gw[2].backbonemanetrouting 	OLSR_Total_HNA_(originated) 	125
+scalar OLSR.gw[2].backbonemanetrouting 	OLSR_Total_TC 	0
+scalar OLSR.gw[2].backbonemanetrouting 	OLSR_Total_Messages_Sent 	717
+scalar OLSR.host[0].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar OLSR.host[0].networkLayer.arp 	completedARPResolution:count 	4
+attr title  "ARP completed resolutions, count"
+scalar OLSR.host[0].networkLayer.arp 	initiatedARPResolution:count 	4
+attr title  "ARP initiated resolutions, count"
+scalar OLSR.host[0].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar OLSR.host[0].networkLayer.arp 	sentReq:count 	4
+attr title  "ARP request sent, count"
+scalar OLSR.host[0].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar OLSR.host[0].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar OLSR.host[0].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[0].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[0].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[0].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[0].wlan[0].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.host[0].wlan[0].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.host[0].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.host[0].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.host[0].wlan[0].mac 	"number of received packets" 	4
+scalar OLSR.host[0].wlan[0].mac 	"number of collisions" 	0
+scalar OLSR.host[0].wlan[0].mac 	"number of internal collisions" 	0
+scalar OLSR.host[0].wlan[0].mac 	"number of retry for AC 0" 	0
+scalar OLSR.host[0].wlan[0].mac 	"sent and received bits" 	3838080
+scalar OLSR.host[0].wlan[0].mac 	"sent packet within AC 0" 	400
+scalar OLSR.host[0].wlan[0].mac 	"sent in TXOP " 	0
+scalar OLSR.host[0].wlan[0].mac 	"sentWithoutRetry AC 0" 	400
+scalar OLSR.host[0].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.host[0].wlan[0].mac 	"numDropped AC 0" 	0
+scalar OLSR.host[0].wlan[0].mac 	rcvdPkFromHL:count 	832
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[0].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	479760
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[0].wlan[0].mac 	passedUpPk:count 	721
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[0].wlan[0].mac 	passedUpPk:sum(packetBytes) 	74386
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[0].wlan[0].mac 	rcvdPkFromLL:count 	1525
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.host[0].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	85866
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.host[0].wlan[0].mac 	sentDownPk:count 	836
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.host[0].wlan[0].mac 	sentDownPk:sum(packetBytes) 	479816
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.host[0].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.host[0].wlan[0].radio 	lossRate:max 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.host[0].wlan[0].radio 	lossRate:timeavg 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.host[0].wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar OLSR.host[0].wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.host[0].wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.host[0].wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.host[0].wlan[0].radio 	radioState:count 	4723
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.host[0].udpApp[0] 	"packets sent" 	400
+scalar OLSR.host[0].udpApp[0] 	"packets received" 	0
+scalar OLSR.host[0].udpApp[0] 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[0].udpApp[0] 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic OLSR.host[0].udpApp[0] 	rcvdPkLifetime:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar OLSR.host[0].udpApp[0] 	sentPk:count 	400
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[0].udpApp[0] 	sentPk:sum(packetBytes) 	409600
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[0].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar OLSR.host[0].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar OLSR.host[0].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar OLSR.host[0].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[0].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar OLSR.host[0].udp 	sentPk:count 	400
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[0].udp 	sentPk:sum(packetBytes) 	412800
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[0].manetrouting 	OLSR_HNA_Messages_(Forwarded) 	124
+scalar OLSR.host[0].manetrouting 	OLSR_TC_Messages_(Forwarded) 	124
+scalar OLSR.host[0].manetrouting 	OLSR_Total_HELLO 	341
+scalar OLSR.host[0].manetrouting 	OLSR_Total_HNA_(originated) 	0
+scalar OLSR.host[0].manetrouting 	OLSR_Total_TC 	0
+scalar OLSR.host[0].manetrouting 	OLSR_Total_Messages_Sent 	589
+scalar OLSR.host[1].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar OLSR.host[1].networkLayer.arp 	completedARPResolution:count 	8
+attr title  "ARP completed resolutions, count"
+scalar OLSR.host[1].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar OLSR.host[1].networkLayer.arp 	sentReply:count 	8
+attr title  "ARP replies sent, count"
+scalar OLSR.host[1].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar OLSR.host[1].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar OLSR.host[1].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar OLSR.host[1].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[1].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[1].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[1].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[1].wlan[0].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.host[1].wlan[0].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.host[1].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.host[1].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.host[1].wlan[0].mac 	"number of received packets" 	800
+scalar OLSR.host[1].wlan[0].mac 	"number of collisions" 	1
+scalar OLSR.host[1].wlan[0].mac 	"number of internal collisions" 	0
+scalar OLSR.host[1].wlan[0].mac 	"number of retry for AC 0" 	0
+scalar OLSR.host[1].wlan[0].mac 	"sent and received bits" 	597328
+scalar OLSR.host[1].wlan[0].mac 	"sent packet within AC 0" 	8
+scalar OLSR.host[1].wlan[0].mac 	"sent in TXOP " 	0
+scalar OLSR.host[1].wlan[0].mac 	"sentWithoutRetry AC 0" 	8
+scalar OLSR.host[1].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.host[1].wlan[0].mac 	"numDropped AC 0" 	0
+scalar OLSR.host[1].wlan[0].mac 	rcvdPkFromHL:count 	725
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[1].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	74666
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[1].wlan[0].mac 	passedUpPk:count 	1743
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[1].wlan[0].mac 	passedUpPk:sum(packetBytes) 	967822
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[1].wlan[0].mac 	rcvdPkFromLL:count 	1752
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.host[1].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	968032
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.host[1].wlan[0].mac 	sentDownPk:count 	1525
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.host[1].wlan[0].mac 	sentDownPk:sum(packetBytes) 	85866
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.host[1].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.host[1].wlan[0].radio 	lossRate:max 	0.02
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.host[1].wlan[0].radio 	lossRate:timeavg 	0.0011417967589151
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.host[1].wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar OLSR.host[1].wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.host[1].wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.host[1].wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.host[1].wlan[0].radio 	radioState:count 	6555
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.host[1].udpApp[0] 	"packets sent" 	0
+scalar OLSR.host[1].udpApp[0] 	"packets received" 	800
+scalar OLSR.host[1].udpApp[0] 	rcvdPk:count 	800
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[1].udpApp[0] 	rcvdPk:sum(packetBytes) 	819200
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic OLSR.host[1].udpApp[0] 	rcvdPkLifetime:stats
+field count 800
+field mean 0.011752926499104
+field stddev 0.0071341303670762
+field sum 9.402341199283
+field sqrsum 0.15117078209412
+field min 0.004618166783
+field max 0.027160001384
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar OLSR.host[1].udpApp[0] 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[1].udpApp[0] 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[1].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar OLSR.host[1].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar OLSR.host[1].udp 	passedUpPk:count 	800
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar OLSR.host[1].udp 	rcvdPk:count 	800
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[1].udp 	rcvdPk:sum(packetBytes) 	825600
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar OLSR.host[1].udp 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[1].udp 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[1].manetrouting 	OLSR_HNA_Messages_(Forwarded) 	126
+scalar OLSR.host[1].manetrouting 	OLSR_TC_Messages_(Forwarded) 	0
+scalar OLSR.host[1].manetrouting 	OLSR_Total_HELLO 	343
+scalar OLSR.host[1].manetrouting 	OLSR_Total_HNA_(originated) 	0
+scalar OLSR.host[1].manetrouting 	OLSR_Total_TC 	124
+scalar OLSR.host[1].manetrouting 	OLSR_Total_Messages_Sent 	593
+scalar OLSR.host[2].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar OLSR.host[2].networkLayer.arp 	completedARPResolution:count 	6
+attr title  "ARP completed resolutions, count"
+scalar OLSR.host[2].networkLayer.arp 	initiatedARPResolution:count 	4
+attr title  "ARP initiated resolutions, count"
+scalar OLSR.host[2].networkLayer.arp 	sentReply:count 	2
+attr title  "ARP replies sent, count"
+scalar OLSR.host[2].networkLayer.arp 	sentReq:count 	4
+attr title  "ARP request sent, count"
+scalar OLSR.host[2].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar OLSR.host[2].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar OLSR.host[2].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[2].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[2].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[2].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[2].wlan[0].mgmt 	dataQueueLen:max 	1
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.host[2].wlan[0].mgmt 	dataQueueLen:timeavg 	3.9996772837079e-06
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.host[2].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.host[2].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.host[2].wlan[0].mac 	"number of received packets" 	404
+scalar OLSR.host[2].wlan[0].mac 	"number of collisions" 	2
+scalar OLSR.host[2].wlan[0].mac 	"number of internal collisions" 	0
+scalar OLSR.host[2].wlan[0].mac 	"number of retry for AC 0" 	6
+scalar OLSR.host[2].wlan[0].mac 	"sent and received bits" 	7721280
+scalar OLSR.host[2].wlan[0].mac 	"sent packet within AC 0" 	802
+scalar OLSR.host[2].wlan[0].mac 	"sent in TXOP " 	0
+scalar OLSR.host[2].wlan[0].mac 	"sentWithoutRetry AC 0" 	796
+scalar OLSR.host[2].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.host[2].wlan[0].mac 	"numDropped AC 0" 	0
+scalar OLSR.host[2].wlan[0].mac 	rcvdPkFromHL:count 	1648
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[2].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	965160
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[2].wlan[0].mac 	passedUpPk:count 	1747
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[2].wlan[0].mac 	passedUpPk:sum(packetBytes) 	577054
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[2].wlan[0].mac 	rcvdPkFromLL:count 	2551
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.host[2].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	590470
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.host[2].wlan[0].mac 	sentDownPk:count 	2058
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.host[2].wlan[0].mac 	sentDownPk:sum(packetBytes) 	977380
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.host[2].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.host[2].wlan[0].radio 	lossRate:max 	0.02
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.host[2].wlan[0].radio 	lossRate:timeavg 	0.00064521247129514
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.host[2].wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 1
+field stddev -nan
+field sum 1
+field sqrsum 1
+field min 1
+field max 1
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	0	0
+bin	1	1
+bin	2	0
+scalar OLSR.host[2].wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.host[2].wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.host[2].wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.host[2].wlan[0].radio 	radioState:count 	9219
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.host[2].udpApp[0] 	"packets sent" 	400
+scalar OLSR.host[2].udpApp[0] 	"packets received" 	0
+scalar OLSR.host[2].udpApp[0] 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[2].udpApp[0] 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic OLSR.host[2].udpApp[0] 	rcvdPkLifetime:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar OLSR.host[2].udpApp[0] 	sentPk:count 	400
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[2].udpApp[0] 	sentPk:sum(packetBytes) 	409600
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[2].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar OLSR.host[2].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar OLSR.host[2].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar OLSR.host[2].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[2].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar OLSR.host[2].udp 	sentPk:count 	400
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[2].udp 	sentPk:sum(packetBytes) 	412800
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[2].manetrouting 	OLSR_HNA_Messages_(Forwarded) 	126
+scalar OLSR.host[2].manetrouting 	OLSR_TC_Messages_(Forwarded) 	123
+scalar OLSR.host[2].manetrouting 	OLSR_Total_HELLO 	341
+scalar OLSR.host[2].manetrouting 	OLSR_Total_HNA_(originated) 	0
+scalar OLSR.host[2].manetrouting 	OLSR_Total_TC 	126
+scalar OLSR.host[2].manetrouting 	OLSR_Total_Messages_Sent 	716
+scalar OLSR.host[3].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar OLSR.host[3].networkLayer.arp 	completedARPResolution:count 	5
+attr title  "ARP completed resolutions, count"
+scalar OLSR.host[3].networkLayer.arp 	initiatedARPResolution:count 	2
+attr title  "ARP initiated resolutions, count"
+scalar OLSR.host[3].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar OLSR.host[3].networkLayer.arp 	sentReq:count 	2
+attr title  "ARP request sent, count"
+scalar OLSR.host[3].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar OLSR.host[3].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar OLSR.host[3].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[3].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[3].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[3].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[3].wlan[0].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.host[3].wlan[0].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.host[3].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.host[3].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.host[3].wlan[0].mac 	"number of received packets" 	2
+scalar OLSR.host[3].wlan[0].mac 	"number of collisions" 	9
+scalar OLSR.host[3].wlan[0].mac 	"number of internal collisions" 	0
+scalar OLSR.host[3].wlan[0].mac 	"number of retry for AC 0" 	2
+scalar OLSR.host[3].wlan[0].mac 	"sent and received bits" 	4207344
+scalar OLSR.host[3].wlan[0].mac 	"sent packet within AC 0" 	400
+scalar OLSR.host[3].wlan[0].mac 	"sent in TXOP " 	0
+scalar OLSR.host[3].wlan[0].mac 	"sentWithoutRetry AC 0" 	398
+scalar OLSR.host[3].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.host[3].wlan[0].mac 	"numDropped AC 0" 	0
+scalar OLSR.host[3].wlan[0].mac 	rcvdPkFromHL:count 	1227
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[3].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	525918
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[3].wlan[0].mac 	passedUpPk:count 	1271
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[3].wlan[0].mac 	passedUpPk:sum(packetBytes) 	131162
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[3].wlan[0].mac 	rcvdPkFromLL:count 	2484
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.host[3].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	1017924
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.host[3].wlan[0].mac 	sentDownPk:count 	1231
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.host[3].wlan[0].mac 	sentDownPk:sum(packetBytes) 	528134
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.host[3].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.host[3].wlan[0].radio 	lossRate:max 	0.04
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.host[3].wlan[0].radio 	lossRate:timeavg 	0.0031593931477674
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.host[3].wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 1
+field stddev -nan
+field sum 1
+field sqrsum 1
+field min 1
+field max 1
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	0	0
+bin	1	1
+bin	2	0
+scalar OLSR.host[3].wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.host[3].wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.host[3].wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.host[3].wlan[0].radio 	radioState:count 	7429
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.host[3].udpApp[0] 	"packets sent" 	400
+scalar OLSR.host[3].udpApp[0] 	"packets received" 	0
+scalar OLSR.host[3].udpApp[0] 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[3].udpApp[0] 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic OLSR.host[3].udpApp[0] 	rcvdPkLifetime:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar OLSR.host[3].udpApp[0] 	sentPk:count 	400
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[3].udpApp[0] 	sentPk:sum(packetBytes) 	409600
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[3].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar OLSR.host[3].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar OLSR.host[3].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar OLSR.host[3].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[3].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar OLSR.host[3].udp 	sentPk:count 	400
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[3].udp 	sentPk:sum(packetBytes) 	412800
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[3].manetrouting 	OLSR_HNA_Messages_(Forwarded) 	123
+scalar OLSR.host[3].manetrouting 	OLSR_TC_Messages_(Forwarded) 	125
+scalar OLSR.host[3].manetrouting 	OLSR_Total_HELLO 	340
+scalar OLSR.host[3].manetrouting 	OLSR_Total_HNA_(originated) 	0
+scalar OLSR.host[3].manetrouting 	OLSR_Total_TC 	124
+scalar OLSR.host[3].manetrouting 	OLSR_Total_Messages_Sent 	712
+scalar OLSR.host[4].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar OLSR.host[4].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar OLSR.host[4].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar OLSR.host[4].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar OLSR.host[4].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar OLSR.host[4].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar OLSR.host[4].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar OLSR.host[4].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[4].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[4].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[4].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[4].wlan[0].mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar OLSR.host[4].wlan[0].mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar OLSR.host[4].wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar OLSR.host[4].wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar OLSR.host[4].wlan[0].mac 	"number of received packets" 	0
+scalar OLSR.host[4].wlan[0].mac 	"number of collisions" 	2
+scalar OLSR.host[4].wlan[0].mac 	"number of internal collisions" 	0
+scalar OLSR.host[4].wlan[0].mac 	"number of retry for AC 0" 	0
+scalar OLSR.host[4].wlan[0].mac 	"sent and received bits" 	338784
+scalar OLSR.host[4].wlan[0].mac 	"sent packet within AC 0" 	0
+scalar OLSR.host[4].wlan[0].mac 	"sent in TXOP " 	0
+scalar OLSR.host[4].wlan[0].mac 	"sentWithoutRetry AC 0" 	0
+scalar OLSR.host[4].wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar OLSR.host[4].wlan[0].mac 	"numDropped AC 0" 	0
+scalar OLSR.host[4].wlan[0].mac 	rcvdPkFromHL:count 	434
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar OLSR.host[4].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	42348
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar OLSR.host[4].wlan[0].mac 	passedUpPk:count 	827
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar OLSR.host[4].wlan[0].mac 	passedUpPk:sum(packetBytes) 	88318
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar OLSR.host[4].wlan[0].mac 	rcvdPkFromLL:count 	1231
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar OLSR.host[4].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	528134
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar OLSR.host[4].wlan[0].mac 	sentDownPk:count 	434
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar OLSR.host[4].wlan[0].mac 	sentDownPk:sum(packetBytes) 	42348
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar OLSR.host[4].wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar OLSR.host[4].wlan[0].radio 	lossRate:max 	0.02
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar OLSR.host[4].wlan[0].radio 	lossRate:timeavg 	0.0014410633088073
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic OLSR.host[4].wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 1
+field stddev -nan
+field sum 1
+field sqrsum 1
+field min 1
+field max 1
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	0	0
+bin	1	1
+bin	2	0
+scalar OLSR.host[4].wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar OLSR.host[4].wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar OLSR.host[4].wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar OLSR.host[4].wlan[0].radio 	radioState:count 	3331
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar OLSR.host[4].udpApp[0] 	"packets sent" 	0
+scalar OLSR.host[4].udpApp[0] 	"packets received" 	0
+scalar OLSR.host[4].udpApp[0] 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[4].udpApp[0] 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic OLSR.host[4].udpApp[0] 	rcvdPkLifetime:stats
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "received packet lifetime, stats"
+attr unit  s
+scalar OLSR.host[4].udpApp[0] 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[4].udpApp[0] 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[4].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar OLSR.host[4].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar OLSR.host[4].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar OLSR.host[4].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar OLSR.host[4].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar OLSR.host[4].udp 	sentPk:count 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar OLSR.host[4].udp 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar OLSR.host[4].manetrouting 	OLSR_HNA_Messages_(Forwarded) 	122
+scalar OLSR.host[4].manetrouting 	OLSR_TC_Messages_(Forwarded) 	247
+scalar OLSR.host[4].manetrouting 	OLSR_Total_HELLO 	342
+scalar OLSR.host[4].manetrouting 	OLSR_Total_HNA_(originated) 	0
+scalar OLSR.host[4].manetrouting 	OLSR_Total_TC 	0
+scalar OLSR.host[4].manetrouting 	OLSR_Total_Messages_Sent 	711

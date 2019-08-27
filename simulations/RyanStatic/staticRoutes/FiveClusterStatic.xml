@@ -1,0 +1,361 @@
+<config>
+	<interface hosts='gw[4]' names='wlan0' address='10.0.5.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[3]' names='wlan0' address='10.0.4.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[2]' names='wlan0' address='10.0.3.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[1]' names='wlan0' address='10.0.2.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[0] host[1] host[2] host[3] host[4]' names='wlan0' address='10.0.1.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[1] host[1*]' names='wlan0' address='10.0.2.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[2] host[2*]' names='wlan0' address='10.0.3.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[3] host[3*]' names='wlan0' address='10.0.4.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[4] host[4*]' names='wlan0' address='10.0.5.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[0] host[*]' names='wlan0' address='10.0.1.x' netmask='255.255.255.0'/>\
+	<interface hosts='gw[0] gw[1] gw[2] gw[3] gw[4]' names='wlan1' address='10.0.0.x' netmask='255.255.255.0'/>\
+	<route hosts='host[2]' destination='host[22]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[22]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[22]' destination='host[2]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[3]' destination='host[23]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[23]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[23]' destination='host[3]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[4]' destination='host[34]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[34]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[34]' destination='host[4]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='host[5]' destination='host[35]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[35]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[35]' destination='host[5]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='host[6]' destination='host[46]' interface='wlan0' gateway='host[3]' netmask='255.255.255.255' />
+	<route hosts='host[3]' destination='host[46]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[46]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[46]' destination='host[6]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[6]' interface='wlan0' gateway='host[3]' netmask='255.255.255.255' />
+	<route hosts='host[3]' destination='host[6]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[49]' destination='host[6]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='host[7]' destination='host[47]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[47]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[47]' destination='host[7]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='host[8]' destination='host[10]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[10]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[10]' destination='host[8]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='host[9]' destination='host[11]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[11]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[11]' destination='host[9]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='host[12]' destination='host[32]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[32]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[32]' destination='host[12]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='host[13]' destination='host[33]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[33]' interface='wlan0' gateway='host[39]' netmask='255.255.255.255' />
+	<route hosts='host[39]' destination='host[33]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[33]' destination='host[13]' interface='wlan0' gateway='host[39]' netmask='255.255.255.255' />
+	<route hosts='host[39]' destination='host[13]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='host[14]' destination='host[44]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[44]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[44]' destination='host[14]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='host[15]' destination='host[45]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[45]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[45]' destination='host[15]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='host[16]' destination='host[6]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='host[6]' destination='host[16]' interface='wlan0' gateway='host[3]' netmask='255.255.255.255' />
+	<route hosts='host[3]' destination='host[16]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='host[17]' destination='host[7]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[7]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[7]' destination='host[17]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='host[18]' destination='host[20]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[20]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[20]' destination='host[18]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[19]' destination='host[21]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[21]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[21]' destination='host[19]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[20]' destination='host[28]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[28]' destination='host[20]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[22]' destination='host[42]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[42]' interface='wlan0' gateway='host[46]' netmask='255.255.255.255' />
+	<route hosts='host[46]' destination='host[42]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[42]' destination='host[22]' interface='wlan0' gateway='host[46]' netmask='255.255.255.255' />
+	<route hosts='host[46]' destination='host[22]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='host[23]' destination='host[43]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[43]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[43]' destination='host[23]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='host[24]' destination='host[4]' interface='wlan0' gateway='host[20]' netmask='255.255.255.255' />
+	<route hosts='host[20]' destination='host[4]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[4]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[4]' destination='host[24]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[24]' interface='wlan0' gateway='host[20]' netmask='255.255.255.255' />
+	<route hosts='host[20]' destination='host[24]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[25]' destination='host[5]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[5]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[5]' destination='host[25]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='host[26]' destination='host[16]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[16]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[16]' destination='host[26]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='host[27]' destination='host[17]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[17]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[17]' destination='host[27]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='host[28]' destination='host[30]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[30]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[30]' destination='host[28]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='host[29]' destination='host[31]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[31]' interface='wlan0' gateway='host[39]' netmask='255.255.255.255' />
+	<route hosts='host[39]' destination='host[31]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[31]' destination='host[29]' interface='wlan0' gateway='host[39]' netmask='255.255.255.255' />
+	<route hosts='host[39]' destination='host[29]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='host[32]' destination='host[2]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[2]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[2]' destination='host[32]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='host[33]' destination='host[3]' interface='wlan0' gateway='host[39]' netmask='255.255.255.255' />
+	<route hosts='host[39]' destination='host[3]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[3]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[3]' destination='host[33]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[33]' interface='wlan0' gateway='host[39]' netmask='255.255.255.255' />
+	<route hosts='host[39]' destination='host[33]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[34]' destination='host[14]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[14]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[14]' destination='host[34]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='host[35]' destination='host[15]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[15]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[15]' destination='host[35]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='host[36]' destination='host[26]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[26]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[26]' destination='host[36]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[37]' destination='host[27]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[27]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[27]' destination='host[37]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[38]' destination='host[40]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[40]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[40]' destination='host[38]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='host[39]' destination='host[41]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[41]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[41]' destination='host[39]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='host[40]' destination='host[48]' interface='wlan0' gateway='host[43]' netmask='255.255.255.255' />
+	<route hosts='host[48]' destination='host[40]' interface='wlan0' gateway='host[43]' netmask='255.255.255.255' />
+	<route hosts='host[42]' destination='host[12]' interface='wlan0' gateway='host[46]' netmask='255.255.255.255' />
+	<route hosts='host[46]' destination='host[12]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[12]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[12]' destination='host[42]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[42]' interface='wlan0' gateway='host[46]' netmask='255.255.255.255' />
+	<route hosts='host[46]' destination='host[42]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[43]' destination='host[13]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[13]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[13]' destination='host[43]' interface='wlan0' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='host[44]' destination='host[24]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[24]' interface='wlan0' gateway='host[20]' netmask='255.255.255.255' />
+	<route hosts='host[20]' destination='host[24]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[24]' destination='host[44]' interface='wlan0' gateway='host[20]' netmask='255.255.255.255' />
+	<route hosts='host[20]' destination='host[44]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[45]' destination='host[25]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[25]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[25]' destination='host[45]' interface='wlan0' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='host[46]' destination='host[36]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[36]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[36]' destination='host[46]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='host[47]' destination='host[37]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[37]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[37]' destination='host[47]' interface='wlan0' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='host[48]' destination='host[0]' interface='wlan0' gateway='host[43]' netmask='255.255.255.255' />
+	<route hosts='host[43]' destination='host[0]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[0]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[0]' destination='host[48]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[48]' interface='wlan0' gateway='host[43]' netmask='255.255.255.255' />
+	<route hosts='host[43]' destination='host[48]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[49]' destination='host[1]' interface='wlan0' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[1]' interface='wlan0' netmask='255.255.255.255' />
+	<route hosts='host[1]' destination='host[49]' interface='wlan0' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[10]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[11]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[12]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[13]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[14]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[15]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[16]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[17]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[18]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[19]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[20]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[21]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[22]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[23]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[24]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[25]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[26]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[27]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[28]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[29]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[30]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[31]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[32]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[33]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[34]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[35]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[36]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[37]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[38]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[39]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[40]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[41]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[42]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[43]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[44]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[45]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[46]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[47]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[48]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[0]' destination='host[49]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[0]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[1]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[2]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[3]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[4]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[5]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[6]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[7]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[8]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[9]' interface='wlan1' gateway='gw[0]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[20]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[21]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[22]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[23]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[24]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[25]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[26]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[27]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[28]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[29]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[30]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[31]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[32]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[33]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[34]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[35]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[36]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[37]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[38]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[39]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[40]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[41]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[42]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[43]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[44]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[45]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[46]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[47]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[48]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[1]' destination='host[49]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[0]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[1]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[2]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[3]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[4]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[5]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[6]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[7]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[8]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[9]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[10]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[11]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[12]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[13]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[14]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[15]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[16]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[17]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[18]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[19]' interface='wlan1' gateway='gw[1]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[30]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[31]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[32]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[33]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[34]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[35]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[36]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[37]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[38]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[39]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[40]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[41]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[42]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[43]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[44]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[45]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[46]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[47]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[48]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[2]' destination='host[49]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[0]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[1]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[2]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[3]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[4]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[5]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[6]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[7]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[8]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[9]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[10]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[11]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[12]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[13]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[14]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[15]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[16]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[17]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[18]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[19]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[20]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[21]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[22]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[23]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[24]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[25]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[26]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[27]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[28]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[29]' interface='wlan1' gateway='gw[2]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[40]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[41]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[42]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[43]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[44]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[45]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[46]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[47]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[48]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[3]' destination='host[49]' interface='wlan1' gateway='gw[4]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[0]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[1]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[2]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[3]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[4]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[5]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[6]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[7]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[8]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[9]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[10]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[11]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[12]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[13]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[14]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[15]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[16]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[17]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[18]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[19]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[20]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[21]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[22]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[23]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[24]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[25]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[26]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[27]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[28]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[29]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[30]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[31]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[32]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[33]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[34]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[35]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[36]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[37]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[38]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+	<route hosts='gw[4]' destination='host[39]' interface='wlan1' gateway='gw[3]' netmask='255.255.255.255' />
+</config>

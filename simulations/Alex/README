@@ -1,0 +1,28 @@
+According to Alex, sometimes a simulation run slows down and effectlvely stalls. This seems
+to happen in particular when simulating two clusters with intra-cluster mobility, at around
+450 seconds of simulation time. While we have not been able to track down the cause of this,
+changing the random number seed seems to do the trick in these cases. Alex claims that the
+following seeds worked for his data collection:
+682161
+986355
+626172
+159447
+772087
+
+Also, in (almost?) all cases, after running the simulation, you will get an error message
+about the simulation terminating with an error when closing the simulation output window.
+Alex's thinking on this was the follwing: As long as the finisher module runs, the results 
+should be collected even if you see some errors at the end when closing the simulation. 
+The main error that I see when closing the simulation has something to do with the DHT timers. 
+I think they occur because the simulation had some DHT messages that failed so a timer 
+object is created to count the back off time. However, after the simulation is closed, 
+these objects are not being disposed properly which causes some error messages to appear. 
+To get the simulation results, they should appear as a .sca file in the results folder. 
+The file name will usually be the simulation configuration that you ran by default. If you 
+double click these file, a prompt will pop up asking you to create a analysis file (.anf). 
+Opening the .anf file will allow you to view the result of the simulations.
+
+The directory ~/Alex contains a PDF file with some screen shots on how to export the data 
+from omnet++ into a CSV. It also has the matlab code that Alex used to process his data. 
+It's not very pretty, but may be able to useful as a reference to begin developing one's
+own scripting language or tools.
