@@ -9,6 +9,4 @@ To install and use:
 - clone projects inetmanet-2.0 and oversim in your working directory (github repos also available from NMAI-lab).
 - clone project P2PSIPMANET into your working directory.
 Import all three projects (file>import>general>existing projects into workspace) from the OMNET++ IDE.
-- compile inetmanet (project > build project) then oversim, then MANETSIP (warning: it's slow, particularly for oversim).
-
-- Yay. At this point there is one simulation that can be set up without error. However, the Global Nodelist is not properly updated so as soon as the nodes try to set up a DHT there is an error because the bootstrap mechanism doesn't work.
+- compile inetmanet (project > build project) then oversim, then P2PSIPMANET (warning: it's slow, particularly for oversim).
